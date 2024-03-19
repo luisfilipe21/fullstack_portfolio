@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    box-shadow: 10px 16px 26px 10px rgba(238, 232, 232, 0.75);
+
+    .box {
+        background-color: red;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .flag {
+            
+            .button {
+                display: flex;
+
+                background: none;
+                border-color: none;
+                background-color: green;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .bright{
+            .button {
+                display: flex;
+
+                background: none;
+                border-color: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .nav {
+            nav {
+                width: 350px;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
