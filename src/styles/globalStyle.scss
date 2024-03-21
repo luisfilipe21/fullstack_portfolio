@@ -1,11 +1,13 @@
 :root{
-    --orange: #F95842;
-    --orange-2: #8C3030;
-    --white: #FFF;
-    --black: #0E0E0E;
-    --blue: #17192B;
+    --yellow: #f6be3d;
+    --gray: #cacaca;
+    --gray-2: #cacaca16;
+    --white: #Fcfcfc;
+    --black: #010000;
+    --blue: #3b496c;
 
-    --font: "Inter", sans-serif;
+    --font-1: "Anton", sans-serif;
+    --font-2: "Roboto", sans-serif;
 
     --size-1: 3rem;
     --size-2: 1.75rem;
@@ -18,5 +20,5 @@
 }
 
 body{
-    background: blue;
+    background: linear-gradient(var(--black), 95%, var(--gray))
 }

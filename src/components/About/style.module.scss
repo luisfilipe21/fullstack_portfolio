@@ -8,19 +8,26 @@
         display: flex;
         justify-content: space-between;
 
-        background-color: white;
-
         .boxInfo {
             width: 50%;
-            background-color: red;
             display: flex;
             justify-content: center;
             flex-direction: column;
             height: 70vh;
 
-            .title,
-            .paragraph {
+            span{
+                color:var(--yellow)
+            }
+            
+            h1, p {
                 padding: 0.5rem;
+            }
+
+            .blue{
+                color: #61dbfb;
+            }
+            .red{
+                color: #a6120d;
             }
 
             .boxLinks {

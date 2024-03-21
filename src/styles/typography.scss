@@ -1,37 +1,44 @@
 .title-1{
     font-size: var(--size-1);
-    color: var(--);
+    color: var(--white);
     font-weight: var(--weight-1);
+    font-family: var(--font-1);
 }
 
 .title-2{
     font-size: var(--size-2);
-    color: var(--);
+    color: var(--gray);
     font-weight: var(--weight-2);
+
 }
 
 .title-3{
-    font-size: var(--size-3);
-    color: var(--);
+    font-size: var(--size-2);
+    color: var(--gray);
     font-weight: var(--weight-3);
+    font-family: var(--font-1);
 }
 
 .paragraph{
-    font-size: var(--);
-    color: var(--);
-    font-weight: var(--);
+    font-size: var(--size-4);
+    color: var(--gray);
+    font-weight: var(--600);
+    font-family: var(--font-2);
+    line-height: 1.5;
 }
 
 .specialText{
-    color: var(--);
-    font-size: var(--);
+    color: var(--gray);
+    font-size: var(--size-4);
     text-transform: uppercase;
-
-    border-bottom: 2px solid var(--);
-    width: 15%;
-    padding-bottom: 5px;
+    font-family: var(--font-2);
 }
 
-.logos{
-    color: var(--);
+.link{
+    font-size: var(--size-3);
+    color: var(--yellow);
+    font-weight: var(--600);
+    font-family: var(--font-1);
+    line-height: 1.5;
+    text-decoration: none;
 }

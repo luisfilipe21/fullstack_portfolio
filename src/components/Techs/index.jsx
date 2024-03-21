@@ -19,105 +19,115 @@ import teamPlayer from "../../assets/teamplayer.svg";
 import organized from "../../assets/organized.svg";
 import learn from "../../assets/learn.svg";
 import doc from "../../assets/doc.svg";
+import angular from "../../assets/angular.svg";
 
 export const Techs = () => {
     return (
-        <section id="techs">
+        <section id="stacks">
             <div className="container">
                 <div className={style.box}>
-                    <div className={style.title}>
-                        <h2 className="title-2">Stacks</h2>
-                    </div>
-                    <div className={style.skills}>
-                        <div className={style.hard}>
-                            <ul>
-                                <li >
-                                    <img src={html} title="HTML" />
-                                    <p className="paragraph">HTML</p>
-                                </li>
-                                <li >
-                                    <img src={css} title="CSS" />
-                                    <p className="paragraph">CSS</p>
-                                </li>
-                                <li >
-                                    <img src={js} title="Javascript" />
-                                    <p className="paragraph">Javascript</p>
-                                </li>
-                                <li >
-                                    <img src={typescript} title="GitHub" />
-                                    <p className="paragraph">Typescript</p>
-                                </li>
-                                <li >
-                                    <img src={react} title="ReactJs" />
-                                    <p className="paragraph">ReactJs</p>
-                                </li>
-                                <li >
-                                    <img src={sass} title="SASS" />
-                                    <p className="paragraph">SASS</p>
-                                </li>
-                                <li >
-                                    <img src={tailwind} title="Tailwind" />
-                                    <p className="paragraph">Tailwind</p>
-                                </li>
-                                <li >
-                                    <img src={git} title="Git" />
-                                    <p className="paragraph">Git</p>
-                                </li>
-                                <li >
-                                    <img src={github} title="GitHub" />
-                                    <p className="paragraph">GitHub</p>
-                                </li>
-                                <li >
-                                    <img src={node} title="GitHub" />
-                                    <p className="paragraph">Node</p>
-                                </li>
-                                <li >
-                                    <img src={postgresql} title="GitHub" />
-                                    <p className="paragraph">Postgresql</p>
-                                </li>
-                                <li >
-                                    <img src={jest} title="GitHub" />
-                                    <p className="paragraph">Jest</p>
-                                </li>
-                                <li >
-                                    <img src={prisma} title="GitHub" />
-                                    <p className="paragraph">Prisma</p>
-                                </li>
-                                <li >
-                                    <img src={express} title="GitHub" />
-                                    <p className="paragraph">Express</p>
-                                </li>
-                            </ul>
+                    <div className={style.columns}>
+                        <div className={style.card}>
+                            <div className={style.title}>
+                                <h2 className="title-3">Stacks</h2>
+                            </div>
+                            <div className={style.skills}>
+                                <div className={style.hard}>
+                                    <ul>
+                                        <li >
+                                            <img src={html} title="HTML" />
+                                            <p className="paragraph">HTML</p>
+                                        </li>
+                                        <li >
+                                            <img src={css} title="CSS" />
+                                            <p className="paragraph">CSS</p>
+                                        </li>
+                                        <li >
+                                            <img src={js} title="Javascript" />
+                                            <p className="paragraph">Javascript</p>
+                                        </li>
+                                        <li >
+                                            <img src={typescript} title="Typescript" />
+                                            <p className="paragraph">Typescript</p>
+                                        </li>
+                                        <li >
+                                            <img src={react} title="ReactJs" />
+                                            <p className="paragraph">ReactJs</p>
+                                        </li>
+                                        <li >
+                                            <img src={angular} title="Angular" />
+                                            <p className="paragraph">Angular</p>
+                                        </li>
+                                        <li >
+                                            <img src={sass} title="SASS" />
+                                            <p className="paragraph">SASS</p>
+                                        </li>
+                                        <li >
+                                            <img src={tailwind} title="Tailwind" />
+                                            <p className="paragraph">Tailwind</p>
+                                        </li>
+                                        <li >
+                                            <img src={git} title="Git" />
+                                            <p className="paragraph">Git</p>
+                                        </li>
+                                        <li >
+                                            <img src={github} title="GitHub" />
+                                            <p className="paragraph">GitHub</p>
+                                        </li>
+                                        <li >
+                                            <img src={node} title="Node" />
+                                            <p className="paragraph">Node</p>
+                                        </li>
+                                        <li >
+                                            <img src={postgresql} title="PostgreSQL" />
+                                            <p className="paragraph">PostgreSQL</p>
+                                        </li>
+                                        <li >
+                                            <img src={jest} title="Jest" />
+                                            <p className="paragraph">Jest</p>
+                                        </li>
+                                        <li >
+                                            <img src={prisma} title="Prisma" />
+                                            <p className="paragraph">Prisma</p>
+                                        </li>
+                                        <li >
+                                            <img src={express} title="Express" />
+                                            <p className="paragraph">Express</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div className={style.title}>
-                        <h2 className="title-2"> Soft Skills</h2>
-                    </div>
-                    <div className={style.skills}>
-                        <div className={style.soft}>
-                            <ul>
-                                <li >
-                                    <img src={communication} title="GitHub" />
-                                    <p className="paragraph">Clear Communication</p>
-                                </li>
-                                <li >
-                                    <img src={teamPlayer} title="GitHub" />
-                                    <p className="paragraph">Team Player</p>
-                                </li>
-                                <li >
-                                    <img src={organized} title="GitHub" />
-                                    <p className="paragraph">Well Organized Code</p>
-                                </li>
-                                <li >
-                                    <img src={learn} title="GitHub" />
-                                    <p className="paragraph">Continuous Learner</p>
-                                </li>
-                                <li >
-                                    <img src={doc} title="GitHub" />
-                                    <p className="paragraph">Responsable </p>
-                                </li>
-                            </ul>
+                        <div className={style.card}>
+                            <div className={style.title}>
+                                <h2 className="title-3"> Soft Skills</h2>
+                            </div>
+                            <div className={style.skills}>
+                                <div className={style.soft}>
+                                    <ul>
+                                        <li >
+                                            <img src={communication} title="GitHub" />
+                                            <p className="paragraph">Clear Communication</p>
+                                        </li>
+                                        <li >
+                                            <img src={teamPlayer} title="GitHub" />
+                                            <p className="paragraph">Team Player</p>
+                                        </li>
+                                        <li >
+                                            <img src={organized} title="GitHub" />
+                                            <p className="paragraph">Well Organized Code</p>
+                                        </li>
+                                        <li >
+                                            <img src={learn} title="GitHub" />
+                                            <p className="paragraph">Continuous Learner</p>
+                                        </li>
+                                        <li >
+                                            <img src={doc} title="GitHub" />
+                                            <p className="paragraph">Responsable </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

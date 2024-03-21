@@ -7,8 +7,8 @@ export const Projects = () => {
         <section id="projects">
             <div className="container">
                 <div className={style.project}>
-                    <h1 className="title-2">Projects</h1>
-                    <div className={style.projectCard}>
+                    <h1 className="title-3">Projects</h1>
+                    <div className={style.projectCards}>
                         {projects.map(project => {
                             return (
                                 <Card
