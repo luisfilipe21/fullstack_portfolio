@@ -1,0 +1,30 @@
+.box {
+    height: 70vh;
+    background-color: white;
+
+    .title {
+        padding: 1rem 0;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: columns;
+        justify-content: space-between;
+
+        .hard, .soft {
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+.project {
+    width: 100%;
+    background-color: red;
+
+    .projectCard {
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
