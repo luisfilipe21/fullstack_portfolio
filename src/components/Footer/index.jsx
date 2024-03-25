@@ -26,7 +26,6 @@ export const Footer = () => {
                                 {<BsWhatsapp size={40} />}
                             </a>
                         </li>
-                    
                     </ul>
                 </div>
             </div>
