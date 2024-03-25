@@ -1,0 +1,36 @@
+.divName{
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+
+    ::before {
+        content: "CONTACT ME";
+        color: var(--gray);
+        font-family: var(--font-2);
+        opacity: .1;
+        position: absolute;
+        font-size: 80px;
+        top: -1.5rem;
+        left: 16rem;
+        font-weight: 300;
+    }
+}
+.divLinks {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        li {
+            a {
+                color: var(--yellow);
+            }
+        }
+    }
+}

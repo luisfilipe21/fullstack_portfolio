@@ -1,12 +1,28 @@
 .project {
+    text-align: center;
+    position: relative;
 
+    h1 {
+        ::before {
+            content: "MY WORK";
+            color: var(--gray);
+            font-family: var(--font-2);
+            opacity: .2;
+            position: absolute;
+            font-size: 80px;
+            top: -2rem;
+            left: 20rem;
+            font-weight: 300;
+        }
+    }
     .projectCards {
-        overflow-x: auto;
+        position: relative;
+        overflow-x: hidden;
         max-width: 100%;
         min-height: 60vh;
         display: flex;
         align-items: center;
         margin: 0 auto;
-        gap: 2rem;
+        gap: 1rem;
     }
 }

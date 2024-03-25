@@ -1,7 +1,9 @@
+"use client";
 import style from "./style.module.scss";
 import brasil from "../../assets/brasil.svg";
 import eua from "../../assets/eua.svg";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const Header = () => {
 
@@ -10,7 +12,12 @@ export const Header = () => {
 
     return (
         <header>
-            <div className="container">
+            <motion.div
+                className="container"
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.5 }}
+            >
                 <div className={style.box}>
                     <div className={style.name}>
                         <h1 className="title-3">Luis</h1>
@@ -31,14 +38,14 @@ export const Header = () => {
                     <div className={style.nav}>
                         <nav>
                             <ul>
-                                <li><a className="specialText" href="#projects">Projects</a></li>
-                                <li><a className="specialText" href="#stacks">Stacks</a></li>
-                                <li><a className="specialText" href="#contacts">Contact</a></li>
+                                <li><a className="specialText" href="#projects"><span># </span>Projects</a></li>
+                                <li><a className="specialText" href="#stacks"><span># </span>Stacks</a></li>
+                                <li><a className="specialText" href="#contacts"><span># </span>Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </header>
     )
 }
