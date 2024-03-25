@@ -1,7 +1,6 @@
 import style from "./style.module.scss";
 import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
-import { BiLogoGithub } from "react-icons/bi";
 
 export const Footer = () => {
     return (
