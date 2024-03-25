@@ -1,28 +1,48 @@
-.project {
-    text-align: center;
-    position: relative;
+.container {
+    width: 100%;
 
-    h1 {
-        ::before {
-            content: "MY WORK";
-            color: var(--gray);
-            font-family: var(--font-2);
-            opacity: .2;
-            position: absolute;
-            font-size: 80px;
-            top: -2rem;
-            left: 20rem;
-            font-weight: 300;
-        }
-    }
-    .projectCards {
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    .project {
+        text-align: center;
         position: relative;
-        overflow-x: hidden;
-        max-width: 100%;
-        min-height: 60vh;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        gap: 1rem;
+        box-sizing: border-box;
+        overflow: hidden;
+
+
+
+        h1 {
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+
+            &::before {
+                content: "MY WORK";
+                color: var(--gray);
+                font-family: var(--font-2);
+                opacity: .2;
+                position: absolute;
+                font-size: 80px;
+                top: 1.5rem;
+                left: 38rem;
+                font-weight: 300;
+            }
+        }
+
+
+        .motionDiv {
+            padding: 2rem 0;
+            position: relative;
+            min-height: 45vh;
+
+            .projectCards {
+
+                position: absolute;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+        }
     }
 }

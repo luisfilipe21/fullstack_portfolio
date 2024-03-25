@@ -13,7 +13,7 @@ export const Projects = () => {
     let [ref, { width }] = useMeasure();
     const xTranslation = useMotionValue(0);
 
-    const FAST_DURATION = 5;
+    const FAST_DURATION = 25;
     const SLOW_DURATION = 75;
 
     const [duration, setDuration] = useState(FAST_DURATION);
@@ -23,7 +23,7 @@ export const Projects = () => {
 
     useEffect(() => {
         let controls;
-        let finalPosition = -width / 2 - 8;
+        let finalPosition = -width / 2 - 1600;
 
         if (mustFinish) {
             controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
@@ -56,37 +56,39 @@ export const Projects = () => {
 
     return (
         <section id="projects">
-            <div className="container">
+            <div className={style.container}>
                 <div className={style.project}>
                     <h1 className="title-3">Projects</h1>
-                    <motion.div
-                        className={style.projectCards}
-                        style={{ x: xTranslation }}
-                        ref={{ ref }}
-                        onHoverStart={() => {
-                            setMustFinish(true);
-                            setDuration(SLOW_DURATION);
-                        }}
-                        onHoverEnd={() => {
-                            setMustFinish(true);
-                            setDuration(FAST_DURATION);
-                        }}
-                    >
-                        {[...projects, ...projects].map(project => {
-                            return (
-                                <Card
-                                    key={project.id}
-                                    name={project.name}
-                                    description={project.description}
-                                    site={project.site}
-                                    img={project.img}
-                                    technologies={project.technologies}
-                                    git={project.git}
-                                />
-                            )
-                        })}
-                    </motion.div>
+                    <div className={style.motionDiv}
+                        ref={{ ref }}>
+                        <motion.div
+                            className={style.projectCards}
+                            style={{ x: xTranslation }}
 
+                            onHoverStart={() => {
+                                setMustFinish(true);
+                                setDuration(SLOW_DURATION);
+                            }}
+                            onHoverEnd={() => {
+                                setMustFinish(true);
+                                setDuration(FAST_DURATION);
+                            }}
+                        >
+                            {[...projects, ...projects].map(project => {
+                                return (
+                                    <Card
+                                        key={project.id}
+                                        name={project.name}
+                                        description={project.description}
+                                        site={project.site}
+                                        img={project.img}
+                                        technologies={project.technologies}
+                                        git={project.git}
+                                    />
+                                )
+                            })}
+                        </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

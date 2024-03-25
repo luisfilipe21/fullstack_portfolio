@@ -1,6 +1,12 @@
 .projects {
     max-width: 350px;
     max-height: 650px;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     .cardsOverlay {
@@ -8,10 +14,12 @@
         max-height: 40.625rem;
         min-height: 18.75rem;
         position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
 
         .overlayImg {
             height: 300px;

@@ -1,7 +1,6 @@
-import { AnimatePresence, motion, useMotionValue } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import style from "./style.module.scss";
-import { useEffect, useState } from "react";
-import { projects } from "../../../data/projects";
+import { useState } from "react";
 
 
 
@@ -21,6 +20,7 @@ export const Card = ({ name,
         <motion.div
             onHoverStart={() => setShowOverlay(true)}
             onHoverEnd={() => setShowOverlay(false)}
+            key={img}
             className={style.projects}>
             <AnimatePresence>
                 {showOverlay && (
