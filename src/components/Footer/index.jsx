@@ -26,11 +26,7 @@ export const Footer = () => {
                                 {<BsWhatsapp size={40} />}
                             </a>
                         </li>
-                        {/* <li>
-                            <a href="https://github.com/luisfilipe21" target="_blank">
-                                {<BiLogoGithub size={40} />}
-                            </a>
-                        </li> */}
+                    
                     </ul>
                 </div>
             </div>
