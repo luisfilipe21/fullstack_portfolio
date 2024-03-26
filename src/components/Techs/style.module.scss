@@ -1,53 +1,90 @@
 .box {
-    height: 80vh;
+    width: 100%;
 
     .columns {
-        display: flex;
-        justify-content: space-between;
-
-        .title {
-            padding: 1rem 0;
-            text-align: center;
-            position: relative;
-
-            ::before {
-                content: "HABILITIES";
-                font-family: var(--font-2);
-                opacity: .1;
-                position: absolute;
-                font-size: 80px;
-                top: -0.6rem;
-                left: 2rem;
-                font-weight: 300;
-            }
-        }
-
         .card {
             padding: 0 1rem;
+            width: 100%;
 
-            .skills {
+            .title {
+                padding: 2rem 0;
+                text-align: center;
+
+                h2 {
+                    position: relative;
+
+                    &::before {
+                        content: "HABILITIES";
+                        color: var(--gray);
+                        font-family: var(--font-2);
+                        font-size: 80px;
+                        opacity: .1;
+                        position: absolute;
+                        top: -1.5rem;
+                        left: 7rem;
+                        font-weight: 300;
+                    }
+                    @media(min-width: 768px){
+                        &::before {
+                            content: "HABILITIES";
+                            color: var(--gray);
+                            font-family: var(--font-2);
+                            font-size: 80px;
+                            opacity: .1;
+                            position: absolute;
+                            top: -1.5rem;
+                            left: -10rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+
+            @media(min-width: 768px) {
                 width: 100%;
                 display: flex;
-                flex-direction: columns;
-                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+
+            .skills {
+
 
                 .hard {
+                    box-sizing: border-box;
+
                     ul {
-                        display: grid;
-                        grid-template-columns: auto auto auto auto;
+                        display: flex;
+                        box-sizing: border-box;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
                         text-align: center;
                         padding: 1rem;
 
                         li {
+                            font-weight: 900;
                             padding: 0.8rem;
                         }
+                    }
+
+                    @media(min-width: 768px) {
+                        display: flex;
+                        flex-direction: columns;
+                        justify-content: space-between;
                     }
                 }
 
                 .soft {
                     ul {
-                        display: grid;
-                        grid-template-columns: auto auto auto;
+                        display: flex;
+                        box-sizing: border-box;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
                         text-align: center;
                         padding: 1rem;
 
@@ -57,11 +94,13 @@
                             align-items: center;
                             justify-content: center;
                             flex-wrap: wrap;
+                            text-align: center;
                             min-width: 150px;
                             padding: 0.8rem;
 
                             p {
-                                margin-top: auto;
+                                margin-top: 1rem;
+                                font-weight: 900;
                             }
                         }
 
@@ -69,7 +108,25 @@
                     }
 
                 }
+
+                @media(min-width: 768px) {
+                    display: flex;
+                    flex-direction: columns;
+                    justify-content: space-between;
+                }
             }
         }
+
+        @media(min-width: 1024px) {
+            display: flex;
+            align-items: flex-start;
+        }
+
+    }
+
+    @media(min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

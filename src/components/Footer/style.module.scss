@@ -1,25 +1,42 @@
-.divName{
+.divName {
     margin-top: 3rem;
     text-align: center;
-    position: relative;
 
-    ::before {
-        content: "CONTACT ME";
-        color: var(--gray);
-        font-family: var(--font-2);
-        opacity: .1;
-        position: absolute;
-        font-size: 80px;
-        top: -1.5rem;
-        left: 15.5rem;
-        font-weight: 300;
+    h2 {
+        position: relative;
+
+        &::before {
+            content: "CONTACT ME";
+            color: var(--gray);
+            font-family: var(--font-2);
+            font-size: 80px;
+            opacity: .2;
+            position: absolute;
+            top: -1.5rem;
+            // left: 3em;
+            font-weight: 300;
+        }
+
+        @media(min-width: 768px) {
+            &::before {
+                left: 2em;
+            }
+        }
+
+        @media(min-width: 1040px) {
+            &::before {
+                left: 4.5em;
+            }
+        }
     }
 }
+
 .divLinks {
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
     ul {
         display: flex;
         align-items: center;

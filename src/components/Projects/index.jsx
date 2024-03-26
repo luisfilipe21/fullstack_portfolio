@@ -14,7 +14,7 @@ export const Projects = () => {
     const xTranslation = useMotionValue(0);
 
     const FAST_DURATION = 25;
-    const SLOW_DURATION = 75;
+    const SLOW_DURATION = 155;
 
     const [duration, setDuration] = useState(FAST_DURATION);
 
@@ -58,7 +58,9 @@ export const Projects = () => {
         <section id="projects">
             <div className={style.container}>
                 <div className={style.project}>
-                    <h1 className="title-3">Projects</h1>
+                    <div className={style.title}>
+                        <h2 className="title-3">Projects</h2>
+                    </div>
                     <div className={style.motionDiv}
                         ref={{ ref }}>
                         <motion.div
@@ -74,7 +76,7 @@ export const Projects = () => {
                                 setDuration(FAST_DURATION);
                             }}
                         >
-                            {[...projects, ...projects].map(project => {
+                            {[...projects, ...projects, ...projects].map(project => {
                                 return (
                                     <Card
                                         key={project.id}

@@ -13,7 +13,8 @@ header {
         .name {
             text-transform: uppercase;
 
-            h2 {
+            h1 {
+                text-shadow: 1px 2px var(--yellow);
                 font-weight: 800;
             }
         }

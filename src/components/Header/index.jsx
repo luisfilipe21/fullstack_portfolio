@@ -2,20 +2,20 @@
 import style from "./style.module.scss";
 import brasil from "../../assets/brasil.svg";
 import eua from "../../assets/eua.svg";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { motion } from "framer-motion";
+import { ProjectContext } from "../../providers/LengContext";
 
 export const Header = () => {
 
-    const [port, setPort] = useState(true);
-
+    const {port, setPort} = useContext(ProjectContext);
 
     return (
         <header>
             <motion.div
                 className="container"
                 initial={{ y: -100 }}
-                animate={{ y: 0 }}
+                whileInView={{ y: 0 }}
                 transition={{ duration: 0.5 }}
             >
                 <div className={style.box}>
