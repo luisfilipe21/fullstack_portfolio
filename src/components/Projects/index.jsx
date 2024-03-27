@@ -4,11 +4,12 @@ import { projects } from "../../data/projects";
 import { Card } from "./Card"
 import style from "./style.module.scss";
 import { useMotionValue, motion, animate } from "framer-motion";
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
+import { ProjectContext } from "../../providers/LengContext";
 
 
 export const Projects = () => {
+    const { port } = useContext(ProjectContext);
 
     let [ref, { width }] = useMeasure();
     const xTranslation = useMotionValue(0);
@@ -59,7 +60,20 @@ export const Projects = () => {
             <div className={style.container}>
                 <div className={style.project}>
                     <div className={style.title}>
-                        <h2 className="title-3">Projects</h2>
+                        {port
+                            ?
+                            <motion.h2 className="title-3"
+                                initial={{ y: 100, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.8 }}
+                            > Projects</motion.h2>
+                            :
+                            <motion.h2 className="title-3"
+                                initial={{ y: 100, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.8 }}
+                            > Projetos</motion.h2>
+                        }
                     </div>
                     <div className={style.motionDiv}
                         ref={{ ref }}>
@@ -92,7 +106,7 @@ export const Projects = () => {
                         </motion.div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }

@@ -2,9 +2,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import style from "./style.module.scss";
 import { useState } from "react";
 
-
-
-
 export const Card = ({ name,
     description,
     site,
@@ -13,8 +10,6 @@ export const Card = ({ name,
     git }) => {
 
     const [showOverlay, setShowOverlay] = useState(false);
-
-
 
     return (<>
         <motion.div
@@ -36,8 +31,8 @@ export const Card = ({ name,
                             exit={{ y: 10 }}
                             className={style.overlayImg}
                         >
-                            <a href="" className="paragraph">Deploy</a>
-                            <a href="" className="paragraph">GitHub</a>
+                            <a href={site} target="_blank" className="paragraph">Deploy</a>
+                            <a href={git} target="_blank" className="paragraph">GitHub</a>
                         </motion.div>
                     </motion.div>
                 )}

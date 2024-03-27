@@ -1,31 +1,34 @@
 .divName {
     margin-top: 3rem;
-    text-align: center;
-
+    
     h2 {
+        text-align: center;
         position: relative;
 
         &::before {
             content: "CONTACT ME";
             color: var(--gray);
             font-family: var(--font-2);
-            font-size: 80px;
+            font-size:  75px;
             opacity: .2;
             position: absolute;
-            top: -1.5rem;
-            // left: 3em;
+            top: -1rem;
+            left: 0.5em;
             font-weight: 300;
         }
 
         @media(min-width: 768px) {
             &::before {
-                left: 2em;
+                left: 1.5em;
+                font-size:  80px;
             }
         }
 
         @media(min-width: 1040px) {
             &::before {
-                left: 4.5em;
+                top: -1.5rem;
+                left: 3.2em;
+                font-size:  95px;
             }
         }
     }

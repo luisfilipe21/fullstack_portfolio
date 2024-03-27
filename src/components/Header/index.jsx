@@ -8,7 +8,7 @@ import { ProjectContext } from "../../providers/LengContext";
 
 export const Header = () => {
 
-    const {port, setPort} = useContext(ProjectContext);
+    const { port, setPort } = useContext(ProjectContext);
 
     return (
         <header>
@@ -37,11 +37,20 @@ export const Header = () => {
 
                     <div className={style.nav}>
                         <nav>
-                            <ul>
-                                <li><a className="specialText" href="#projects"><span># </span>Projects</a></li>
-                                <li><a className="specialText" href="#stacks"><span># </span>Stacks</a></li>
-                                <li><a className="specialText" href="#contacts"><span># </span>Contact</a></li>
-                            </ul>
+                            {port
+                                ?
+                                <ul>
+                                    <li><a className="specialText" href="#projects"><span># </span>Projects</a></li>
+                                    <li><a className="specialText" href="#stacks"><span># </span>Stacks</a></li>
+                                    <li><a className="specialText" href="#contacts"><span># </span>Contact</a></li>
+                                </ul>
+                                :
+                                <ul>
+                                    <li><a className="specialText" href="#projects"><span># </span>Projetos</a></li>
+                                    <li><a className="specialText" href="#stacks"><span># </span>Tecnologias</a></li>
+                                    <li><a className="specialText" href="#contacts"><span># </span>Contacto</a></li>
+                                </ul>
+                            }
                         </nav>
                     </div>
                 </div>
