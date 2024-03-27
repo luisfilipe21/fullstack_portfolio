@@ -16,7 +16,7 @@ export const Header = () => {
                 className="container"
                 initial={{ y: -100 }}
                 whileInView={{ y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.8 }}
             >
                 <div className={style.box}>
                     <div className={style.name}>

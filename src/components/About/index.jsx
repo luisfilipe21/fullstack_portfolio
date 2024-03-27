@@ -21,7 +21,7 @@ export const AboutSection = () => {
                                 <motion.h1 className="title-1"
                                     initial={{ opacity: 0, x: -100 }}
                                     animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.7 }}
+                                    transition={{ duration: 0.8 }}
                                 >
                                     Welcome to <span> my portfolio!</span>
                                 </motion.h1>
@@ -29,7 +29,7 @@ export const AboutSection = () => {
                                 <motion.h1 className="title-1"
                                     initial={{ opacity: 0, x: -100 }}
                                     animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.7 }}
+                                    transition={{ duration: 0.8 }}
                                 >
                                     Bem Vindo ao <span> meu portfólio!</span>
 
