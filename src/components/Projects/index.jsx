@@ -1,30 +1,43 @@
 "use client";
 import useMeasure from "react-use-measure";
-import { projects } from "../../data/projects";
 import { Card } from "./Card"
 import style from "./style.module.scss";
 import { useMotionValue, motion, animate } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
 import { ProjectContext } from "../../providers/LengContext";
+import { ModalDetail } from "../Modal";
 
 
 export const Projects = () => {
-    const { port } = useContext(ProjectContext);
+    const { port, getProjects, project, modal, capturedId, setCapturedProjectId } = useContext(ProjectContext);
 
     let [ref, { width }] = useMeasure();
     const xTranslation = useMotionValue(0);
 
     const FAST_DURATION = 25;
-    const SLOW_DURATION = 155;
+    const SLOW_DURATION = 5155;
 
     const [duration, setDuration] = useState(FAST_DURATION);
 
     const [mustFinish, setMustFinish] = useState(false);
     const [rerender, setRerender] = useState(false);
 
+
+    useEffect(() => {
+        getProjects();
+        capturedId({ project });
+
+        const storedId = localStorage.getItem('capturedId');
+        if (storedId) {
+            setCapturedProjectId(JSON.parseInt(storedId));
+        }
+
+    }, [])
+
     useEffect(() => {
         let controls;
-        let finalPosition = -width / 2 - 1600;
+        let finalPosition = -width / 2 - 3200;
+
 
         if (mustFinish) {
             controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
@@ -51,9 +64,7 @@ export const Projects = () => {
         };
 
         return stopAnimation;
-
     }, [rerender, xTranslation, duration, width]);
-
 
     return (
         <section id="projects">
@@ -90,20 +101,22 @@ export const Projects = () => {
                                 setDuration(FAST_DURATION);
                             }}
                         >
-                            {[...projects, ...projects, ...projects].map(project => {
+                            {project.map(project => {
                                 return (
                                     <Card
                                         key={project.id}
                                         name={project.name}
-                                        description={project.description}
                                         site={project.site}
                                         img={project.img}
-                                        technologies={project.technologies}
                                         git={project.git}
+                                        description={project.description}
+                                        technologies={project.technologies}
                                     />
                                 )
                             })}
                         </motion.div>
+                        {modal ? <ModalDetail
+                        /> : null}
                     </div>
                 </div>
             </div >

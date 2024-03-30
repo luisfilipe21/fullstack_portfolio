@@ -1,6 +1,6 @@
 .projects {
-    max-width: 350px;
-    max-height: 650px;
+    max-width: 34.375rem;
+    max-height: 46.875rem;
     position: relative;
     overflow: hidden;
     min-width: 200px;
@@ -22,8 +22,8 @@
         align-items: center;
 
         .overlayImg {
-            height: 300px;
-            width: 350px;
+            height: 28.125rem;
+            width: 34.375rem;
             border-radius: 8px;
 
             background-color: black;
@@ -37,7 +37,8 @@
             a {
                 font-weight: 700;
                 text-decoration: none;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -54,8 +55,8 @@
         align-items: flex-start;
 
         .img {
-            height: 300px;
-            width: 350px;
+            height: 28.125rem;
+            width: 34.375rem;
             border-radius: 8px;
         }
 
@@ -63,6 +64,15 @@
             margin-top: 1rem;
             display: flex;
             justify-content: flex-start;
+
+            button {
+                border: none;
+                background-color: transparent;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

@@ -1,15 +1,20 @@
 import { AnimatePresence, motion } from "framer-motion";
 import style from "./style.module.scss";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ProjectContext } from "../../../providers/LengContext";
 
-export const Card = ({ name,
-    description,
+export const Card = ({
     site,
-    img,
     technologies,
+    description,
+    name,
+    img,
     git }) => {
 
     const [showOverlay, setShowOverlay] = useState(false);
+    const { modal, setModal, capturedId } = useContext(ProjectContext);
+
+
 
     return (<>
         <motion.div
@@ -31,7 +36,8 @@ export const Card = ({ name,
                             exit={{ y: 10 }}
                             className={style.overlayImg}
                         >
-                            <a href={site} target="_blank" className="paragraph">Deploy</a>
+                            {!site ? null : <a href={site} target="_blank" className="paragraph">Deploy</a>}
+
                             <a href={git} target="_blank" className="paragraph">GitHub</a>
                         </motion.div>
                     </motion.div>
@@ -50,7 +56,11 @@ export const Card = ({ name,
                 >
                 </div>
                 <div className={style.openCard}>
-                    <a href="link para um modal" className="link">Projects Details</a>
+                    <button
+                        type="button"
+                        onClick={() => setModal(!modal) | capturedId({ name, description, technologies })}
+                        className="link"
+                    >Projects Details</button>
                 </div>
             </div>
         </motion.div>

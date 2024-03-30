@@ -2,7 +2,7 @@
 import style from "./style.module.scss";
 import brasil from "../../assets/brasil.svg";
 import eua from "../../assets/eua.svg";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { motion } from "framer-motion";
 import { ProjectContext } from "../../providers/LengContext";
 

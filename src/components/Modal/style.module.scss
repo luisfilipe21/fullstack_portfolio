@@ -1,0 +1,69 @@
+.boxModal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.634);
+
+    .modal {
+        position: absolute;
+        margin: auto 0;
+        width: 600px;
+        height: 600px;
+        background-color: rgba(223, 213, 213, 0.926);
+        border-radius: 20px;
+
+        img {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+        }
+
+        .boxInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            width: 100%;
+            height: 100%;
+            padding: 1rem 2rem;
+
+            .title,
+            .description,
+            p {
+                color: var(--blue);
+            }
+
+            .title {
+                text-align: center;
+                font-weight: var(--weight-2);
+                font-size: var(--size-1);
+            }
+
+            .description {
+                letter-spacing: 3px;
+            }
+
+            .techs {
+                font-size: var(--size-3);
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+                .individualTech {
+                    padding: 20px;
+                    border: 4px solid var(--blue);
+                    border-radius: 10px;
+                    color: var(--blue);
+                    font-weight: 600;
+
+                }
+            }
+        }
+    }
+}
