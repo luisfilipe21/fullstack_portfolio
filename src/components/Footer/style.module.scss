@@ -9,18 +9,28 @@
             content: "CONTACT ME";
             color: var(--gray);
             font-family: var(--font-2);
-            font-size:  75px;
+            font-size:  4.6875rem;
             opacity: .2;
             position: absolute;
             top: -1rem;
             left: 0.5em;
             font-weight: 300;
         }
+        
+        @media(max-width: 400px) {
+            &::before {
+                font-size: 3.125rem;
+                font-weight: 400;
+                top: -0.4rem;
+                left: -0.7rem;
+                opacity: .2;
+            }
+        }
 
         @media(min-width: 768px) {
             &::before {
                 left: 1.5em;
-                font-size:  80px;
+                font-size:  5rem;
             }
         }
 
@@ -28,7 +38,7 @@
             &::before {
                 top: -1.5rem;
                 left: 3.2em;
-                font-size:  95px;
+                font-size:  5.9375rem;
             }
         }
     }

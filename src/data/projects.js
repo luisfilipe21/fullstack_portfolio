@@ -14,7 +14,7 @@ export const projects = [
         description: "I present a responsive Hamburger page that has filtering functions by name, addition, deletion and sum of values for the chosen snack, in addition to dark mode. This project is responsive and was created with React and SCSS.",
         site: 'https://hamburger-kenzie-lyart.vercel.app/',
         img: "https://i.imgur.com/s0IRPq0.png",
-        technologies: ["React", "SCSS", "HTML", "Javascript"],
+        technologies: ["React", "SASS", "HTML", "Javascript"],
         git: "https://github.com/"
     },
     {
