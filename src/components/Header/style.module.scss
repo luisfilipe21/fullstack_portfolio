@@ -10,7 +10,13 @@ header {
         align-items: center;
         justify-content: space-around;
 
-        @media(max-width: 400px) {
+        @media(max-width: 520px) {
+            padding: 0;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        @media(max-width: 521px) {
             padding: 0;
             flex-direction: column;
             justify-content: flex-start;
@@ -59,7 +65,14 @@ header {
                     align-items: center;
                     width: 100%;
 
-                    @media(max-width: 400px) {
+                    @media(max-width: 520px) {
+                        justify-content: center;
+                        box-sizing: border-box;
+                        gap: 1rem;
+                        margin-top: .5rem;
+                    }
+
+                    @media(min-width: 521px) {
                         justify-content: center;
                         box-sizing: border-box;
                         gap: 1rem;

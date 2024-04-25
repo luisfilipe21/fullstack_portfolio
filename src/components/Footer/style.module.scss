@@ -1,44 +1,36 @@
 .divName {
     margin-top: 3rem;
-    
+    display: flex;
+    justify-content: center;
     h2 {
-        text-align: center;
         position: relative;
 
         &::before {
-            content: "CONTACT ME";
+            content: "CONTACTME";
+            letter-spacing: 10px;
             color: var(--gray);
             font-family: var(--font-2);
-            font-size:  4.6875rem;
+            font-size: 70px;
             opacity: .2;
             position: absolute;
-            top: -1rem;
-            left: 0.5em;
+            top: -1.5rem;
+            left: -8rem;
             font-weight: 300;
         }
-        
-        @media(max-width: 400px) {
-            &::before {
-                font-size: 3.125rem;
-                font-weight: 400;
-                top: -0.4rem;
-                left: -0.7rem;
-                opacity: .2;
-            }
-        }
 
-        @media(min-width: 768px) {
+        @media(max-width: 460px) {
             &::before {
-                left: 1.5em;
-                font-size:  5rem;
+                font-size: 65px;
+                top: -0.9rem;
+                left: -6rem;
             }
         }
 
         @media(min-width: 1040px) {
             &::before {
-                top: -1.5rem;
-                left: 3.2em;
-                font-size:  5.9375rem;
+                left: -1.8em;
+                top: -1.3rem;
+                font-size: 85px;
             }
         }
     }

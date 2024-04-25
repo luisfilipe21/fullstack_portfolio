@@ -28,14 +28,12 @@
                     font-weight: 300;
                 }
 
-                @media(max-width: 400px) {
+                @media(max-width: 460px) {
                     &::before {
                         font-size: 70px;
                         opacity: .1;
-                        position: absolute;
                         top: -0.9rem;
                         left: -6rem;
-                        font-weight: 300;
                     }
                 }
 
