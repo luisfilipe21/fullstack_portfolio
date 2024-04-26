@@ -15,7 +15,7 @@ export const Projects = () => {
     const xTranslation = useMotionValue(0);
 
     const FAST_DURATION = 25;
-    const SLOW_DURATION = 5155;
+    const SLOW_DURATION = 6155;
 
     const [duration, setDuration] = useState(FAST_DURATION);
 
@@ -36,7 +36,7 @@ export const Projects = () => {
 
     useEffect(() => {
         let controls;
-        let finalPosition = -width / 2 - 3200;
+        let finalPosition = -width / 2 - 4800;
 
 
         if (mustFinish) {

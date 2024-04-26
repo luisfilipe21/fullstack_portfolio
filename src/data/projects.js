@@ -6,7 +6,7 @@ export const projects = [
         site: "https://kenzie-movie-five.vercel.app/",
         img: "https://i.imgur.com/mtpHIM9.png",
         technologies: ["React", "Javascript", "SCSS", "HTML"],
-        git: "https://github.com/"
+        git: "https://github.com/timeKenzieMovie/kenzie_movie"
     },
     {
         id: 1,
@@ -15,19 +15,28 @@ export const projects = [
         site: 'https://hamburger-kenzie-lyart.vercel.app/',
         img: "https://i.imgur.com/s0IRPq0.png",
         technologies: ["React", "SASS", "HTML", "Javascript"],
-        git: "https://github.com/"
+        git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-react-entrega-s3-template-hamburgueria_luisfilipe21"
     },
     {
         id: 2,
+        name: "Bulário Eletrônico",
+        description: "This project was a challenge proposed by a company for a front end position focusing on React. The challenge was to interact with a JSON-SERVER API and create a page with a limit of 10 medicines per page, sorted in descending order of issue date and a search by medicine name and laboratory name. The design was up to us.",
+        site: "https://kenzie-movie-five.vercel.app/",
+        img: "https://i.imgur.com/za11UnX.png",
+        technologies: ["React", "Javascript", "SCSS", "HTML"],
+        git: "https://github.com/"
+    },
+    {
+        id: 3,
         name: "Pokedex",
         description: "This project was carried out by accessing the Pokemon API with pure Javascript, styled with CSS and responsive to different screen sizes. Some of its features are dark mode and choosing your favorite pokemons.",
         site: "https://pokedex-6w6zorbf0-luisfilipe21.vercel.app",
         img: "https://i.imgur.com/vhUu9Xm.png",
         technologies: ["Javascript", "CSS", "HTML"],
-        git: "https://github.com/"
+        git: "https://github.com/luisfilipe21/pokedex/tree/master/Pokedex"
     },
     {
-        id: 3,
+        id: 4,
         name: "Open Music",
         description: "I present an application project for selling music albums with simultaneous filters for musical genre and price per album, which can also be used separately, in addition to having a dark mode. The technologies used were Javascript, HTML and CSS.",
         site: "https://kenzie-academy-brasil-developers-open-music-templa-luisfilipe21.vercel.app/",
@@ -36,7 +45,7 @@ export const projects = [
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-open-music-template_luisfilipe21"
     },
     {
-        id: 4,
+        id: 5,
         name: "Social Media",
         description: "This is social midia app, where you can create posts, like and open your friend's full post.  There is also the option to start to follow new people inside the page. And since this project is in Javascript vanilla, there is an abundunce of async functions.",
         site: "https://rede-social-bice.vercel.app/",
@@ -45,7 +54,7 @@ export const projects = [
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-entrega-criando-rede-social_luisfilipe21"
     },
     {
-        id: 5,
+        id: 6,
         name: "Nu Kenzie",
         description: "This is a simulation of a finance control app, where we can control the inflow and outflow of money, returning the final balance. We may also delete one card once it is no longer needed or has been wrongly added.",
         site: "https://kenzie-academy-brasil-developers-react-entrega-s1-luisfilipe21.vercel.app/",
@@ -54,7 +63,7 @@ export const projects = [
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-react-entrega-s1-template-nu-kenzie_luisfilipe21"
     },
     {
-        id: 6,
+        id: 7,
         name: "Pet Info",
         description: "In this project I creation of a social network for pets, where you can create posts, like and comment on the posts of your pet friends. There is also a schema for creating and validating logins via Zod, and just a touch to make a better UX for project was usage of the Toastify library. And since this project is in Javascript vanilla, there is an abundunce of async functions. The Pet Api was provided by Kenzie Academy Brasil.",
         site: "https://kenzie-academy-brasil-developers-pet-info-template-luisfilipe21.vercel.app/",
@@ -63,7 +72,7 @@ export const projects = [
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-pet-info-template-1_luisfilipe21"
     },
     {
-        id: 7,
+        id: 8,
         name: "Rifa Alexa",
         description: "This was an ordered project by a client who wanted to raffle an Echo Dot AKA Alexa. A list of 50 names was created to be chosen for the random draw. When the name was sold, it would be grayed out and could no longer be picked. By his choice, the random draw of the names was not to be included within this application.",
         site: "https://rifa-echodot.vercel.app/",
@@ -72,7 +81,7 @@ export const projects = [
         git: "https://github.com/luisfilipe21/rifa_alexa/"
     },
     {
-        id: 8,
+        id: 9,
         name: "Cars API",
         description: "This was a project commissioned by a client who wanted to raffle an Echo Dot AKA Alexa. A list of 50 names was created to be chosen for the random draw. When the name was sold, it would be grayed out and could no longer be chosen. By his choice, the random draw of names within this application was not ugly.",
         site: "",
@@ -81,7 +90,7 @@ export const projects = [
         git: "https://github.com/luisfilipe21/cars_api"
     },
     {
-        id: 9,
+        id: 10,
         name: "Tasks API",
         description: "This project was to practice our logic in unit and integration testing of the API we built. Testing all possible routes and errors that each one could return.",
         site: "",
@@ -90,7 +99,7 @@ export const projects = [
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-m5-template-entrega1_luisfilipe21"
     },
     {
-        id: 10,
+        id: 11,
         name: "Landing page - Login",
         description: "A simple landing page with a login structure and a button. This was mainly a CSS challenge.",
         site: "https://login-landing-page-three.vercel.app/",
@@ -99,7 +108,7 @@ export const projects = [
         git: "https://github.com/luisfilipe21/landingpage_login"
     },
     {
-        id: 11,
+        id: 12,
         name: "Kenzie Hub",
         description: "This is an application that creates and validates logins with the help of Zod. Once inside the home page, it is possible to create cards with information about the user. Made with vanilla CSS Javascript and the Toastify library",
         site: "https://kenzie-hub-hazel.vercel.app/",

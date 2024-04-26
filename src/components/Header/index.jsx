@@ -48,7 +48,7 @@ export const Header = () => {
                                 <ul>
                                     <li><a className="specialText" href="#projects"><span># </span>Projetos</a></li>
                                     <li><a className="specialText" href="#stacks"><span># </span>Tecnologias</a></li>
-                                    <li><a className="specialText" href="#contacts"><span># </span>Contacto</a></li>
+                                    <li><a className="specialText" href="#contacts"><span># </span>Contato</a></li>
                                 </ul>
                             }
                         </nav>

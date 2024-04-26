@@ -20,7 +20,7 @@ export const ModalDetail = () => {
     return (
         <div className={style.boxModal}>
             <div className={style.modal}>
-                <img src={close} onClick={closeModal}/>
+                <img src={close} onClick={closeModal} />
 
                 <div className={style.boxInfo}>
                     <div className={style.title}>
@@ -37,7 +37,11 @@ export const ModalDetail = () => {
                     <div className={style.techs} >
                         {techs.map((techs, i) => {
                             return (
-                                <div key={i} className={style.individualTech}> {techs}</div>
+                                <div
+                                    key={i}
+                                    className={style.individualTech}>
+                                    {techs}
+                                </div>
                             )
                         })}
                     </div>

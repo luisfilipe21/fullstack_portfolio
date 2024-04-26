@@ -175,8 +175,8 @@ export const Techs = () => {
                                                     <p className="paragraph">Continuous Learner</p>
                                                 </motion.li>
                                                 <motion.li variants={container}>
-                                                    <img src={doc} title="Responsable" />
-                                                    <p className="paragraph">Responsable </p>
+                                                    <img src={doc} title="Responsible" />
+                                                    <p className="paragraph">Responsible </p>
                                                 </motion.li>
                                             </motion.ul>
                                             :
