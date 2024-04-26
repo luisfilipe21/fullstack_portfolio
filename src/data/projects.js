@@ -24,7 +24,7 @@ export const projects = [
         site: "https://kenzie-movie-five.vercel.app/",
         img: "https://i.imgur.com/za11UnX.png",
         technologies: ["React", "Javascript", "SCSS", "HTML"],
-        git: "https://github.com/"
+        git: "https://github.com/luisfilipe21/bulario_eletronico"
     },
     {
         id: 3,
