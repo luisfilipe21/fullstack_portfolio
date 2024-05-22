@@ -1,16 +1,17 @@
 .divName {
-    margin-top: 3rem;
+    margin-top: 3rem 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     h2 {
         position: relative;
 
         &::before {
             content: "CONTACTME";
-            letter-spacing: 10px;
+            letter-spacing: 5px;
             color: var(--gray);
             font-family: var(--font-2);
-            font-size: 70px;
+            font-size: 4.375rem;
             opacity: .2;
             position: absolute;
             top: -1.5rem;
@@ -20,8 +21,11 @@
 
         @media(max-width: 460px) {
             &::before {
+                overflow-x: auto;
+                width: auto;
+                letter-spacing: 3px;
                 font-size: 65px;
-                top: -0.9rem;
+                top: -0.5rem;
                 left: -6rem;
             }
         }

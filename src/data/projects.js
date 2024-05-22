@@ -113,7 +113,7 @@ export const projects = [
         description: "This is an application that creates and validates logins with the help of Zod. Once inside the home page, it is possible to create cards with information about the user. Made with vanilla CSS Javascript and the Toastify library",
         site: "https://kenzie-hub-hazel.vercel.app/",
         img: "https://i.imgur.com/hWHnMJS.png",
-        technologies: ["Javascript", "HTML", "SCSS"],
+        technologies: ["Javascript", "HTML", "SASS"],
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-react-entrega-kenzie-hub-_luisfilipe21"
     },
 ]
