@@ -1,6 +1,6 @@
 export const projects = [
     {
-        id: 0,
+        id: 5,
         name: "Kenzie Movie",
         description: "This project was carried out in a group with the main objective of improving our knowledge of Git Flow. Developed in React and styled in SCSS and with a clean and responsive design, this site simulates a film review page. Allowing users to register themselves and log in to rate the films listed once watched.",
         site: "https://kenzie-movie-five.vercel.app/",
@@ -45,7 +45,7 @@ export const projects = [
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-open-music-template_luisfilipe21"
     },
     {
-        id: 5,
+        id: 0,
         name: "Social Media",
         description: "This is social midia app, where you can create posts, like and open your friend's full post.  There is also the option to start to follow new people inside the page. And since this project is in Javascript vanilla, there is an abundunce of async functions.",
         site: "https://rede-social-bice.vercel.app/",
