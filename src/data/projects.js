@@ -6,7 +6,7 @@ export const projects = [
         site: "https://rede-social-bice.vercel.app/",
         img: "https://i.imgur.com/bHM5DKS.png",
         technologies: ["Javascript", "CSS", "HTML"],
-        git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-entrega-criando-rede-social_luisfilipe21"
+        git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-entrega-criando-rede-social_luisfilipe21" 
     },
     {
         id: 1,
@@ -21,7 +21,7 @@ export const projects = [
         id: 2,
         name: "Bulário Eletrônico",
         description: "This project was a challenge proposed by a company for a front end position focusing on React. The challenge was to interact with a JSON-SERVER API and create a page with a limit of 10 medicines per page, sorted in descending order of issue date and a search by medicine name and laboratory name. The design was up to us.",
-        site: "https://kenzie-movie-five.vercel.app/",
+        site: "",
         img: "https://i.imgur.com/za11UnX.png",
         technologies: ["React", "Javascript", "SCSS", "HTML"],
         git: "https://github.com/luisfilipe21/bulario_eletronico"

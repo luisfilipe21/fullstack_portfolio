@@ -17,17 +17,17 @@
             top: -1.5rem;
             left: -8rem;
             font-weight: 300;
+            
         }
 
         @media(max-width: 460px) {
             &::before {
                 overflow-x: auto;
                 width: auto;
-                letter-spacing: 3px;
                 font-size: 65px;
                 top: -0.5rem;
                 left: -6rem;
-                letter-spacing: none;
+                letter-spacing: 0px;
             }
         }
 
