@@ -9,6 +9,8 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.634);
 
+    
+
     .modal {
         position: absolute;
         margin: auto 0;
@@ -16,6 +18,10 @@
         height: 600px;
         background-color: rgba(223, 213, 213, 0.926);
         border-radius: 20px;
+
+        @media(max-width: 460px){
+            max-width: 350px;
+        }
 
         img {
             cursor: pointer;
@@ -54,6 +60,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
+
+                @media(max-width: 460px){
+                    gap: 1rem 0;
+                    flex-wrap: wrap;
+                }
                 
                 .individualTech {
                     padding: 20px;
@@ -61,6 +72,13 @@
                     border-radius: 10px;
                     color: var(--blue);
                     font-weight: 600;
+
+                    @media(max-width: 460px){
+                        padding: 10px;
+                        font-weight: 600;
+                        border: 2px solid var(--blue);
+                        font-size: var(--size-4);
+                    }
 
                 }
             }

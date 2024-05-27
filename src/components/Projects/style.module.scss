@@ -30,6 +30,7 @@
 
                 @media(max-width: 460px) {
                     &::before {
+                        letter-spacing: 4px;
                         font-size: 70px;
                         opacity: .1;
                         top: -0.9rem;
