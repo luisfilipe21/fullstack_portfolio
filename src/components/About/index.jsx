@@ -1,6 +1,6 @@
 "use client";
 import style from "./style.module.scss";
-import Foto from "src/assets/eu.jpg";
+import Foto from "../../assets/eu.jpg";
 import { motion } from "framer-motion";
 import { ProjectContext } from "../../providers/LengContext";
 import { useContext } from "react";

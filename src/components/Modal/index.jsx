@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import style from "./style.module.scss";
 import { ProjectContext } from "../../providers/LengContext";
-import close from "../../assets/close.svg"
+import x from "../../../public/close.svg"
 
 export const ModalDetail = () => {
     const { port, setModal, capturedProjectId } = useContext(ProjectContext);
@@ -16,7 +16,6 @@ export const ModalDetail = () => {
         setTechs(capturedProjectId.technologies)
     }, []);
 
-    console.log(techs)
     return (
         <div className={style.boxModal}>
             <div className={style.modal}>
