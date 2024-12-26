@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import style from "./style.module.scss";
 import { ProjectContext } from "../../providers/LengContext";
-import x from "../../../public/close.svg"
+import close from "../../../public/close.svg"
 
 export const ModalDetail = () => {
     const { port, setModal, capturedProjectId } = useContext(ProjectContext);
