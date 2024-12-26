@@ -15,14 +15,17 @@ import postgresql from "../../assets/postgresql.svg";
 import prisma from "../../assets/prisma.svg";
 import express from "../../assets/express.svg";
 import typescript from "../../assets/typescript.svg";
+import next from "../../assets/nextjs.svg";
+
 import communication from "../../assets/communication.svg";
 import teamPlayer from "../../assets/teamplayer.svg";
 import organized from "../../assets/organized.svg";
 import learn from "../../assets/learn.svg";
 import doc from "../../assets/doc.svg";
-import angular from "../../assets/angular.svg";
 import { useContext } from "react";
 import { ProjectContext } from "../../providers/LengContext";
+import { techList } from "./data/techList";
+import { TechList } from "./TechList";
 
 export const Techs = () => {
 
@@ -69,71 +72,18 @@ export const Techs = () => {
                                         initial="hidden"
                                         whileInView="visible"
                                     >
-                                        <motion.li variants={container}>
-                                            <img src={html} title="HTML" />
-                                            <p className="paragraph">HTML</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={css} title="CSS" />
-                                            <p className="paragraph">CSS</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={js} title="Javascript" />
-                                            <p className="paragraph">Javascript</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={typescript} title="Typescript" />
-                                            <p className="paragraph">Typescript</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={react} title="ReactJs" />
-                                            <p className="paragraph">ReactJs</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={angular} title="Angular" />
-                                            <p className="paragraph">Angular</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={sass} title="SASS" />
-                                            <p className="paragraph">SASS</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={tailwind} title="Tailwind" />
-                                            <p className="paragraph">Tailwind</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={git} title="Git" />
-                                            <p className="paragraph">Git</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={github} title="GitHub" />
-                                            <p className="paragraph">GitHub</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={node} title="Node" />
-                                            <p className="paragraph">Node</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={postgresql} title="PostgreSQL" />
-                                            <p className="paragraph">PostgreSQL</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={jest} title="Jest" />
-                                            <p className="paragraph">Jest</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={prisma} title="Prisma" />
-                                            <p className="paragraph">Prisma</p>
-                                        </motion.li>
-                                        <motion.li variants={container}>
-                                            <img src={express} title="Express" />
-                                            <p className="paragraph">Express</p>
-                                        </motion.li>
+                                        {techList.map((tech, id) => {
+                                            return (
+                                                <TechList key={id} tech={tech} />
+
+                                            )
+                                        })}
                                     </motion.ul>
                                 </div>
                             </div>
                         </div>
                         <div className={style.card}>
+{/*                             
                             <div className={style.title}>
                                 {port
                                     ?
@@ -150,6 +100,7 @@ export const Techs = () => {
                                     >Interpessoais</motion.h2>
                                 }
                             </div>
+                            
                             <div className={style.skills}>
                                 <div className={style.soft}>
                                     {
@@ -208,7 +159,8 @@ export const Techs = () => {
                                             </motion.ul>
                                     }
                                 </div>
-                            </div>
+                            </div> */}
+                        
                         </div>
                     </div>
                 </div>
