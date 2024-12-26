@@ -1,7 +1,7 @@
 export const techList = [
     {
         id: 1,
-        img: "../../../../public/html.svg",
+        img: "../../../../../public/html.svg",
         name: "HTML",
     },
     {
