@@ -1,27 +1,7 @@
 import style from "./style.module.scss";
 import { motion } from "framer-motion";
 
-import jest from "../../assets/jest.svg";
-import html from "../../assets/html.svg";
-import css from "../../assets/css.svg";
-import js from "../../assets/js.svg";
-import react from "../../assets/react.svg";
-import sass from "../../assets/sass.svg";
-import tailwind from "../../assets/tailwind.svg";
-import git from "../../assets/git.svg";
-import github from "../../assets/github.svg";
-import node from "../../assets/nodejs.svg";
-import postgresql from "../../assets/postgresql.svg";
-import prisma from "../../assets/prisma.svg";
-import express from "../../assets/express.svg";
-import typescript from "../../assets/typescript.svg";
-import next from "../../assets/nextjs.svg";
 
-import communication from "../../assets/communication.svg";
-import teamPlayer from "../../assets/teamplayer.svg";
-import organized from "../../assets/organized.svg";
-import learn from "../../assets/learn.svg";
-import doc from "../../assets/doc.svg";
 import { useContext } from "react";
 import { ProjectContext } from "../../providers/LengContext";
 import { techList } from "./data/techList";
