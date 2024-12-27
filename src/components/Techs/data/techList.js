@@ -1,84 +1,100 @@
+import Html from "../../../../public/html.svg"
+import Css from "../../../../public/css.svg"
+import Express from "../../../../public/express.svg"
+import Git from "../../../../public/git.svg"
+import Github from "../../../../public/github.svg"
+import Jest from "../../../../public/jest.svg"
+import Js from "../../../../public/js.svg"
+import Nest from "../../../../public/nestjs.svg"
+import Next from "../../../../public/nextjs.svg"
+import Nodejs from "../../../../public/nodejs.svg"
+import PostgreSQL from "../../../../public/postgresql.svg"
+import Prisma from "../../../../public/prisma.svg"
+import React from "../../../../public/react.svg"
+import Sass from "../../../../public/sass.svg"
+import Tailwind from "../../../../public/tailwind.svg"
+import Typescript from "../../../../public/typescript.svg"
+
+
 export const techList = [
     {
         id: 1,
-        img: "public/html.svg",
+        img: Html,
         name: "HTML",
     },
     {
         id: 2,
-        img: "public/css.svg",
+        img: Css,
         name: "CSS",
     },
     {
         id: 3,
-        img: "public/js.svg",
+        img: Js,
         name: "Javascript",
     },
     {
         id: 4,
-        img: "public/typescript.svg",
+        img: Typescript,
         name: "Typescript",
     },
     {
         id: 5,
-        img: "public/react.svg",
+        img: React,
         name: "React",
     },
     {
         id: 6,
-        img: "public/nextjs.svg",
+        img: Next,
         name: "Next.Js",
     },
     {
         id: 7,
-        img: "public/sass.svg",
+        img: Sass,
         name: "SASS",
     },
     {
         id: 8,
-        img: "public/tailwind.svg",
+        img: Tailwind,
         name: "Tailwind",
     },
     {
         id: 9,
-        img: "public/git.svg",
+        img: Git,
         name: "Git",
     },
     {
         id: 10,
-        img: "public/github.svg",
+        img: Github,
         name: "GitHub",
     },
     {
         id: 11,
-        img: "public/nodejs.svg",
+        img: Nodejs,
         name: "NodeJs",
     },
     {
         id: 12,
-        img: "public/nestjs.svg",
+        img: Nest,
         name: "Nest",
     },
     {
         id: 13,
-        img: "public/postgresql.svg",
+        img: PostgreSQL,
         name: "PostgreSQL",
     },
     {
         id: 14,
-        img: "public/jest.svg",
+        img: Jest,
         name: "Jest",
     },
     {
         id: 15,
-        img: "public/prisma.svg",
+        img: Prisma,
         name: "Prisma ORM",
     },
     {
         id: 16,
-        img: "public/express.svg",
+        img: Express,
         name: "Express",
     },
-
-
 ]
