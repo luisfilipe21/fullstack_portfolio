@@ -55,7 +55,6 @@ export const Techs = () => {
                                         {techList.map((tech, id) => {
                                             return (
                                                 <TechList key={id} tech={tech} />
-
                                             )
                                         })}
                                     </motion.ul>
