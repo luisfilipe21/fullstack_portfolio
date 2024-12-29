@@ -1,12 +1,12 @@
 export const projects = [
     {
         id: 0,
-        name: "Social Media",
-        description: "This is social midia app, where you can create posts, like and open your friend's full post.  There is also the option to start to follow new people inside the page. And since this project is in Javascript vanilla, there is an abundunce of async functions.",
-        site: "https://rede-social-bice.vercel.app/",
-        img: "https://i.imgur.com/bHM5DKS.png",
+        name: "Pokedex",
+        description: "This project was carried out by accessing the Pokemon API with pure Javascript, styled with CSS and responsive to different screen sizes. Some of its features are dark mode and choosing your favorite pokemons.",
+        site: "https://pokedex-6w6zorbf0-luisfilipe21.vercel.app",
+        img: "https://i.imgur.com/vhUu9Xm.png",
         technologies: ["Javascript", "CSS", "HTML"],
-        git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-entrega-criando-rede-social_luisfilipe21" 
+        git: "https://github.com/luisfilipe21/pokedex/tree/master/Pokedex" 
     },
     {
         id: 1,
@@ -28,12 +28,12 @@ export const projects = [
     },
     {
         id: 3,
-        name: "Pokedex",
-        description: "This project was carried out by accessing the Pokemon API with pure Javascript, styled with CSS and responsive to different screen sizes. Some of its features are dark mode and choosing your favorite pokemons.",
-        site: "https://pokedex-6w6zorbf0-luisfilipe21.vercel.app",
-        img: "https://i.imgur.com/vhUu9Xm.png",
+        name: "Social Media",
+        description: "This is social midia app, where you can create posts, like and open your friend's full post.  There is also the option to start to follow new people inside the page. And since this project is in Javascript vanilla, there is an abundunce of async functions.",
+        site: "https://rede-social-bice.vercel.app/",
+        img: "https://i.imgur.com/bHM5DKS.png",
         technologies: ["Javascript", "CSS", "HTML"],
-        git: "https://github.com/luisfilipe21/pokedex/tree/master/Pokedex"
+        git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-entrega-criando-rede-social_luisfilipe21"
     },
     {
         id: 4,
@@ -43,6 +43,24 @@ export const projects = [
         img: "https://i.imgur.com/c6RrHba.png",
         technologies: ["Javascript", "CSS", "HTML"],
         git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-open-music-template_luisfilipe21"
+    },
+    {
+        id: 13,
+        name: "QRHealth",
+        description: "This work was carried out in collaboration with a Brazilian startup called QR Health, which aims to unify all medical exams, including blood tests, diagnostics, prognostics, medical certificates, and other reports. I was responsible for the redesign and creation of the landing page, as well as adjustments to the remaining pages (Next.js, JavaScript, Tailwind).",
+        site: "https://qrhealth.io/",
+        img: "https://i.imgur.com/PwuOEVb.png",
+        technologies: ["Next.js", "JavaScript", "Tailwind"],
+        git: ""
+    },
+    {
+        id: 14,
+        name: "Portfólio Colaborativo",
+        description: "This group project showcases Team Eagle as part of the Front-end Fusion initiative. My responsibilities included designing and developing key sections such as the Header, Footer, Team Introduction, and Dark Mode. As the leader of Team Eagle, I guided the development process, supported the team in crafting all other sections, and ensured the project's success. Additionally, I handled code refactoring and standardization to maintain consistency and quality across the project. (React, JavaScript, Tailwind, Zod, Axios, Zustand)",
+        site: "https://portifolio-colaborativo-codewizard.onrender.com/",
+        img: "https://i.imgur.com/jZSXtSc.png",
+        technologies: ["React", "JavaScript", "Tailwind", "Zod", "Axios", "Zustand"],
+        git: "https://github.com/luisfilipe21/portifolio-colaborativo-codewizard-Eaglescoders"
     },
     {
         id: 5,
