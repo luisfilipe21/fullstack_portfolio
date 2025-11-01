@@ -16,5 +16,8 @@
     margin: 0 auto;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+    @media (max-width: 768px) {
+        padding: 1rem 0;
+    }
 }
 

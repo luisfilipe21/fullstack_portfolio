@@ -10,6 +10,42 @@ export const Header = () => {
 
     const { port, setPort } = useContext(ProjectContext);
 
+
+    const pageLinks = [
+        {
+            id: 1,
+            href: "#projects",
+            text: "Projects",
+        },
+        {
+            id: 2,
+            href: "#stacks",
+            text: "Stacks",
+        },
+        {
+            id: 3,
+            href: "#contacts",
+            text: "Contact",
+        }
+    ]
+    const linkDasPaginas = [
+        {
+            id: 1,
+            href: "#projects",
+            text: "Projetos",
+        },
+        {
+            id: 2,
+            href: "#stacks",
+            text: "Tecnologias",
+        },
+        {
+            id: 3,
+            href: "#contacts",
+            text: "Contato",
+        }
+    ]
+
     return (
         <header>
             <motion.div
@@ -40,15 +76,31 @@ export const Header = () => {
                             {port
                                 ?
                                 <ul>
-                                    <li><a className="specialText" href="#projects"><span># </span>Projects</a></li>
-                                    <li><a className="specialText" href="#stacks"><span># </span>Stacks</a></li>
-                                    <li><a className="specialText" href="#contacts"><span># </span>Contact</a></li>
+                                    {pageLinks.map((item) => {
+                                        return (
+                                            <li key={item.id}>
+                                                <a className="specialText" href={item.href}>
+                                                    <span># </span>
+                                                    {item.text}
+                                                </a>
+                                            </li>
+                                        )
+                                    })}
+
+
                                 </ul>
                                 :
                                 <ul>
-                                    <li><a className="specialText" href="#projects"><span># </span>Projetos</a></li>
-                                    <li><a className="specialText" href="#stacks"><span># </span>Tecnologias</a></li>
-                                    <li><a className="specialText" href="#contacts"><span># </span>Contato</a></li>
+                                    {linkDasPaginas.map(item => {
+                                        return (
+                                            <li key={item.id}>
+                                                <a className="specialText" href={item.href}>
+                                                    <span># </span>
+                                                    {item.text}
+                                                </a>
+                                            </li>
+                                        )
+                                    })}
                                 </ul>
                             }
                         </nav>
