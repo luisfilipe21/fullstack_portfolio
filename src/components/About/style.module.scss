@@ -10,7 +10,7 @@
         justify-content: center;
         margin-top: 7rem;
     }
-    .boxDevider {
+    .boxDivider {
         margin: 3rem 0;
 
         @media(min-width: 768px) {
@@ -21,7 +21,6 @@
 
         .boxInfo {
             width: 100%;
-
             span {
                 color: var(--yellow)
             }
@@ -30,9 +29,8 @@
                 text-align: center;
             }
 
-            h1,
-            p {
-                padding: 1rem;
+            h1{
+                padding: 1rem 0;
             }
 
             @media(min-width: 768px) {
