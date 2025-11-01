@@ -29,9 +29,11 @@
     font-weight: var(--600);
     font-family: var(--font-2);
     line-height: 1.5;
+    padding: 1rem 0;
 
     @media(max-width: 460px){
         font-size: var(--size-5);
+        margin: 1rem 0;
     }
 }
 

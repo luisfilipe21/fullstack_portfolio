@@ -11,7 +11,7 @@
             letter-spacing: 5px;
             color: var(--gray);
             font-family: var(--font-2);
-            font-size: 4.375rem;
+            font-size: 70px;
             opacity: .2;
             position: absolute;
             top: -1.5rem;
@@ -24,9 +24,9 @@
             &::before {
                 overflow-x: auto;
                 width: auto;
-                font-size: 65px;
-                top: -0.5rem;
-                left: -2rem;
+                font-size: 3.3125rem;
+                top: -1.3rem;
+                left: -2.5rem;
                 letter-spacing: 0px;
             }
         }
@@ -42,7 +42,7 @@
 }
 
 .divLinks {
-    height: 20vh;
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;

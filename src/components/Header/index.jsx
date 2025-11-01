@@ -13,7 +13,7 @@ export const Header = () => {
     return (
         <header>
             <motion.div
-                className="container"
+                className="container-header"
                 initial={{ y: -100 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.8 }}

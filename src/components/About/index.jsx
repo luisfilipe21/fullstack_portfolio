@@ -10,6 +10,17 @@ export const AboutSection = () => {
 
     const { port } = useContext(ProjectContext);
 
+    const presentationText = `I’m Luis Filipe, a front-end developer focused on React, Next.js and TypeScript. Before tech, I worked in administrative and communication roles — which is why I bring process, clarity and ownership into software. I don’t just ship code. I ship clarity + structure with code.
+
+    I’ve contributed to 40+ projects (freelance, personal and professional) always delivering clean architecture, accessible UI, and solutions that actually make sense to the end user. I love turning complexity into simple experiences — and I’m obsessed with continuous improvement.
+
+    If your team values product-thinking, quality engineering and people who push the bar forward — we’re aligned.`
+
+    const textoDeApresentacao = `Sou o Luis Filipe, desenvolvedor front-end especializado em React, Next.js e TypeScript. Antes de migrar para o desenvolvimento, atuei em áreas administrativas e comunicação. Essa base me tornou extremamente organizado, orientado a processos e claro na comunicação. Hoje, trago tudo isso para o código, criando interfaces acessíveis, responsivas e com arquitetura cuidadosa.
+
+    Já participei de mais de 40 projetos entre freelas, pessoais e profissionais, sempre priorizando código limpo, boas práticas e entregando valor real ao usuário final. Minha motivação é construir produtos que façam sentido e evoluam continuamente. Se a sua empresa busca alguém que pense produto e não apenas linha de código, que eleve o nível do time e entregue com propósito, então nós combinamos.`
+
+
     return (
         <section>
             <div className="container">
@@ -37,23 +48,23 @@ export const AboutSection = () => {
                             }
 
                             {port ?
-                            <motion.p className="paragraph"
-                            initial={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1 }}
-                        >
-                            As a full-stack web developer who lives and breathes code, I'm always on the lookout for the <span> next big adventure</span> in the world of programming. With skills ranging from JavaScript to frameworks <span> React</span> and <span> Angular</span>, and all those libraries and tools that keep us in the rhythm of modern development. I love keeping my code clean and organized - it's like therapy for me! And when I'm not knee-deep in coding, I'm working on improving team communication and always hunting for new technologies to learn. Let's build something amazing together!
-                        </motion.p>
-                        :
-                        <motion.p className="paragraph"
-                                initial={{ opacity: 0, x: -100 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 1 }}
-                            >
-                                Como um desenvolvedor web full-stack que vive e respira código, estou constantemente em busca da <span>próxima grande aventura</span> no mundo da programação. Com habilidades que abrangem desde JavaScript e Typescript até os frameworks <span>React</span> e <span>Angular</span>, além de todas aquelas bibliotecas e ferramentas que mantêm nosso ritmo no desenvolvimento moderno. Eu tenho um amor especial por manter meu código limpo e organizado - é como uma terapia para mim! Quando não estou imerso no código, estou dedicado a melhorar a comunicação da equipe e sempre buscando aprender novas tecnologias. Vamos construir algo incrível juntos!
-                            </motion.p>
-                        }
-                            
+                                <motion.p className="paragraph"
+                                    initial={{ opacity: 0, x: -100 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }}
+                                >
+                                    {presentationText}
+                                </motion.p>
+                                :
+                                <motion.p className="paragraph"
+                                    initial={{ opacity: 0, x: -100 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }}
+                                >
+                                    {textoDeApresentacao}
+                                </motion.p>
+                            }
+
 
                         </div>
                         <motion.div className={style.img}
@@ -61,7 +72,7 @@ export const AboutSection = () => {
                             whileInView={{ opacity: 1, y: 0, scale: 1 }}
 
                             transition={{ duration: 0.7 }}>
-                            <img src={Foto} alt="Img"/>
+                            <img src={Foto} alt="Img" />
                         </motion.div>
 
                     </div>
