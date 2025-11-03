@@ -22,6 +22,12 @@
     font-family: var(--font-1);
     letter-spacing: 3px;
 }
+
+.title-3-2 {
+    @extend .title-3;
+    margin-top: 2rem;
+
+}
 .title-4{
     font-size: var(--size-6);
     color: var(--white);
@@ -42,10 +48,28 @@
     padding: 1rem 0;
     text-align: justify;
 
-    @media(max-width: 460px){
+    @media(max-width: 568px){
         font-size: var(--size-5);
         padding: 2rem 0;
     }
+}
+
+.paragraph{
+    font-size: var(--size-4);
+    color: var(--gray);
+    font-weight: var(--600);
+    font-family: var(--font-2);
+    line-height: 1.5;
+    padding: 1rem 0;
+    text-align: justify;
+
+    @media(max-width: 460px){
+        font-size: var(--size-5);
+    }
+}
+.imgText{
+    @extend .paragraph;
+    text-align: center;
 }
 
 .specialText{

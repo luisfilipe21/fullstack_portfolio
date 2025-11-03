@@ -38,7 +38,7 @@ export const Techs = () => {
                                         transition={{ duration: 0.8 }}
                                     >Stacks</motion.h2>
                                     :
-                                    <motion.h2 className="title-3"
+                                    <motion.h2 className="title-3-2"
                                         initial={{ y: 100, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.8 }}
@@ -60,86 +60,6 @@ export const Techs = () => {
                                     </motion.ul>
                                 </div>
                             </div>
-                        </div>
-                        <div className={style.card}>
-{/*                             
-                            <div className={style.title}>
-                                {port
-                                    ?
-                                    <motion.h2 className="title-3"
-                                        initial={{ y: -100, opacity: 0 }}
-                                        whileInView={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.8 }}
-                                    >Soft Skills</motion.h2>
-                                    :
-                                    <motion.h2 className="title-3"
-                                        initial={{ y: -100, opacity: 0 }}
-                                        whileInView={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.8 }}
-                                    >Interpessoais</motion.h2>
-                                }
-                            </div>
-                            
-                            <div className={style.skills}>
-                                <div className={style.soft}>
-                                    {
-                                        port ?
-                                            <motion.ul
-                                                variants={container}
-                                                initial="hidden"
-                                                whileInView="visible">
-                                                <motion.li variants={container} >
-                                                    <img src={communication} title="Clear Communication" />
-                                                    <p className="paragraph">Clear Communication</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={teamPlayer} title="Team Player" />
-                                                    <p className="paragraph">Team Player</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={organized} title="Well Organized Code" />
-                                                    <p className="paragraph">Well Organized Code</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={learn} title="Continuous Learner" />
-                                                    <p className="paragraph">Continuous Learner</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={doc} title="Responsible" />
-                                                    <p className="paragraph">Responsible </p>
-                                                </motion.li>
-                                            </motion.ul>
-                                            :
-                                            <motion.ul
-                                                variants={container}
-                                                initial="hidden"
-                                                whileInView="visible">
-
-                                                <motion.li variants={container}>
-                                                    <img src={communication} title="Comunicação clara e objetiva" />
-                                                    <p className="paragraph">Comunicação clara e objetiva</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={teamPlayer} title="Trabalho em equipe" />
-                                                    <p className="paragraph">Trabalho em equipe</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={organized} title="Código limpo e organizado" />
-                                                    <p className="paragraph">Código limpo e organizado</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={learn} title="Aprendizado Contínuo" />
-                                                    <p className="paragraph">Aprendizado Contínuo</p>
-                                                </motion.li>
-                                                <motion.li variants={container}>
-                                                    <img src={doc} title="Resonsável" />
-                                                    <p className="paragraph">Resonsável</p>
-                                                </motion.li>
-                                            </motion.ul>
-                                    }
-                                </div>
-                            </div> */}
-                        
                         </div>
                     </div>
                 </div>

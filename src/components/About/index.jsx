@@ -22,62 +22,63 @@ export const AboutSection = () => {
 
 
     return (
-        <section>
-            <div className="container">
-                <div className={style.box}>
-                    <div className={style.boxDivider} >
-                        <div className={style.boxInfo}
-                        >
-                            {port ?
-                                <motion.h1 className="title-1"
-                                    initial={{ opacity: 0, x: -100 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.8 }}
-                                >
-                                    Welcome to <span> my portfolio!</span>
-                                </motion.h1>
-                                :
-                                <motion.h1 className="title-4"
-                                    initial={{ opacity: 0, x: -100 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.8 }}
-                                >
-                                    Bem Vindo ao <span> meu portfólio!</span>
+        <section className="container">
+            <div className={style.box}>
+                <div className={style.boxDivider}>
 
-                                </motion.h1>
-                            }
+                    <div className={style.boxTitle}>
+                        {port ?
+                            <motion.h1 className="title-1"
+                                initial={{ opacity: 0, x: -100 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8 }}
+                            >
+                                Welcome to <span> my portfolio!</span>
+                            </motion.h1>
+                            :
+                            <motion.h1 className="title-4"
+                                initial={{ opacity: 0, x: -100 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8 }}
+                            >
+                                Bem-Vindo ao <span> meu portfólio!</span>
+                            </motion.h1>
+                        }
+                    </div>
 
-                            {port ?
-                                <motion.p className="paragraph"
-                                    initial={{ opacity: 0, x: -100 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 1 }}
-                                >
-                                    {presentationText}
-                                </motion.p>
-                                :
-                                <motion.p className="paragraph"
-                                    initial={{ opacity: 0, x: -100 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 1 }}
-                                >
-                                    {textoDeApresentacao}
-                                </motion.p>
-                            }
+                    <div className={style.boxInfo}>
+                        {port ?
+                            <motion.p className="paragraph"
+                                initial={{ opacity: 0, x: -100 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 1 }}
+                            >
+                                {presentationText}
+                            </motion.p>
+                            :
+                            <motion.p className="paragraph"
+                                initial={{ opacity: 0, x: -100 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 1 }}
+                            >
+                                {textoDeApresentacao}
+                            </motion.p>
+                        }
 
 
-                        </div>
-                        <motion.div className={style.img}
+
+                        <motion.figure className={style.img}
                             initial={{ opacity: 0, y: 200, scale: 0.5 }}
                             whileInView={{ opacity: 1, y: 0, scale: 1 }}
 
                             transition={{ duration: 0.7 }}>
                             <img src={Foto} alt="Img" />
-                        </motion.div>
+                        </motion.figure>
 
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }

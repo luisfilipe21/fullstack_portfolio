@@ -1,40 +1,57 @@
 .box {
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     .columns {
         .card {
-            padding: 3rem 0;
+            padding-top: 1rem;
             width: 100%;
-            gap: 2rem;
-
+            @media(min-width: 450px) {
+                padding-top: 3rem;
+            }
             .title {
-                padding: 3rem 0;
+                padding: 3rem 0 0.5rem 0;
                 text-align: center;
                 h2 {
-                    position: relative;
+                    // position: relative;
                     
-                    &::before {
-                        content: "HABILITIES";
-                        color: var(--gray);
-                        font-family: var(--font-2);
-                        font-size: 4.6875rem;
-                        opacity: .1;
-                        position: absolute;
-                        top: -1.1rem;
-                        left: 1em;
-                        font-weight: 300;
-                    }
+                    // &::before {
+                    //     content: "HABILITIES";
+                    //     color: var(--gray);
+                    //     font-family: var(--font-2);
+                    //     font-size: 4.6875rem;
+                    //     opacity: .1;
+                    //     position: absolute;
+                    //     top: -1.1rem;
+                    //     left: 1em;
+                    //     font-weight: 300;
+                    // }
                     
-                    @media(max-width: 450px){
-                        &::before {
-                            font-size: 53px;
-                            opacity: .1;
-                            position: absolute;
-                            top: -0.9rem;
-                            left: 0.1em;
-                            font-weight: 300;
-                        }
-                    }
+                    // @media(max-width: 450px){
+                    //     &::before {
+                    //         font-size: 3.3125rem;
+                    //         opacity: .1;
+                    //         position: absolute;
+                    //         top: -1.5rem;
+                    //         left: 0.1em;
+                    //         font-weight: 300;
+                    //     }
+                    // }
+                    // @media(min-width: px){
+                    //     &::before {
+                    //         content: "HABILITIES";
+                    //         color: var(--gray);
+                    //         font-family: var(--font-2);
+                    //         font-size: 95px;
+                    //         opacity: .1;
+                    //         position: absolute;
+                    //         top: -1.8rem;
+                    //         left: -1.6em;
+                    //         font-weight: 300;
+                    //     }
+                    // }
                     @media(min-width: 768px){
                         &::before {
                             content: "HABILITIES";
@@ -76,10 +93,18 @@
                         justify-content: center;
                         text-align: center;
                         padding: 1rem;
+                        
+                        @media(max-width: 767px) {
+                             padding: 1rem 0 0 0 ;
+                        }
 
                         li {
                             font-weight: 900;
                             padding: 0.8rem;
+                            
+                            @media(max-width: 767px) {
+                                padding:0 0.3rem;
+                        }
                         }
                     }
 
@@ -134,10 +159,8 @@
         }
 
     }
-
-    @media(min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    
+    @media(min-width: 540px) {
+        
     }
 }
