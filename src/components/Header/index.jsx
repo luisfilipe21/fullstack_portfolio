@@ -28,7 +28,7 @@ export const Header = () => {
             text: "Contact",
         }
     ]
-    const linkDasPaginas = [
+    const linkDasPaginas = [ 
         {
             id: 1,
             href: "#projects",
