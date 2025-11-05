@@ -29,7 +29,7 @@
 
                 @media(max-width: 450px) {
                     &::before {
-                       font-size: 3.5625rem;
+                        font-size: 3.5625rem;
                         opacity: .1;
                         position: absolute;
                         top: -1.8rem;
@@ -41,7 +41,7 @@
 
                 @media(min-width: 768px) {
                     &::before {
-                       color: var(--gray);
+                        color: var(--gray);
                         font-family: var(--font-2);
                         font-size: 5.9375rem;
                         opacity: .1;
