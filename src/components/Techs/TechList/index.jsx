@@ -17,7 +17,7 @@ export const TechList = ({tech}) => {
 
     return (
         <motion.li variants={container}>
-            <img src={tech.img} title={tech.name} />
+            <img src={tech.img} title={tech.name} width={70}/>
             <p className="imgText">{tech.name}</p>
         </motion.li>
     )

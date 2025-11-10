@@ -1,15 +1,17 @@
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
-
+    padding: 2rem;
+    
+    
     .project {
         overflow: hidden;
+        margin-bottom: 6rem;
 
         .title {
             display: flex;
             justify-content: center;
-            margin: 3rem 0;
+            margin: 2rem 0;
             padding-bottom: 1rem;
 
             h2 {
@@ -56,16 +58,52 @@
         }
 
         .motionDiv {
-            padding: 2rem 0;
+            width: 100%;
             position: relative;
-            min-height: 70vh;
+            overflow: hidden;
+            margin: 0 auto;
+            
+            @media (min-width: 1024px){
+                overflow: hidden;
+                max-width: 950px;
+            }
+
+             @media (max-width: 1025px){
+                max-width: 950px;
+                overflow: hidden;
+            }
 
             .projectCards {
-                position: absolute;
                 display: flex;
-                align-items: center;
-                margin: 0 auto;
-                gap: 2rem;
+                justify-content: space-around;
+                gap: 1.8rem;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+
+        .carouselButton{
+            border: none;
+            background-color: transparent !important;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            padding: 0.5rem ;
+            cursor: pointer;
+            z-index: 10;
+            
+            &.prev {
+                left: -1em;
+            }
+            &.next {
+                right: -1em;
             }
         }
     }

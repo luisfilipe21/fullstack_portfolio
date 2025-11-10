@@ -1,7 +1,7 @@
 "use client";
 import style from "./style.module.scss";
-import brasil from "../../../public/brasil.svg";
-import eua from "../../../public/eua.svg";
+import brasil from "/brasil.svg";
+import eua from "/eua.svg";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import { ProjectContext } from "../../providers/LengContext";

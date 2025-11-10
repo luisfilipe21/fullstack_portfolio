@@ -1,19 +1,21 @@
-import Html from "../../../../public/html.svg"
-import Css from "../../../../public/css.svg"
-import Express from "../../../../public/express.svg"
-import Git from "../../../../public/git.svg"
-import Github from "../../../../public/github.svg"
-import Jest from "../../../../public/jest.svg"
-import Js from "../../../../public/js.svg"
-import Nest from "../../../../public/nestjs.svg"
-import Next from "../../../../public/nextjs.svg"
-import Nodejs from "../../../../public/nodejs.svg"
-import PostgreSQL from "../../../../public/postgresql.svg"
-import Prisma from "../../../../public/prisma.svg"
-import React from "../../../../public/react.svg"
-import Sass from "../../../../public/sass.svg"
-import Tailwind from "../../../../public/tailwind.svg"
-import Typescript from "../../../../public/typescript.svg"
+import Html from "/html.svg"
+import Css from "/css.svg"
+import Express from "/express.svg"
+import Git from "/git.svg"
+import Github from "/github.svg"
+import Jest from "/jest.svg"
+import Js from "/js.svg"
+import Nest from "/nestjs.svg"
+import Next from "/nextjs.svg"
+import Nodejs from "/nodejs.svg"
+import PostgreSQL from "/postgresql.svg"
+import Prisma from "/prisma.svg"
+import React from "/react.svg"
+import Sass from "/sass.svg"
+import Tailwind from "/tailwind.svg"
+import Typescript from "/typescript.svg"
+import Zod from "/zod.svg"
+
 
 
 export const techList = [
@@ -96,5 +98,10 @@ export const techList = [
         id: 16,
         img: Express,
         name: "Express",
+    },
+    {
+        id: 17,
+        img: Zod,
+        name: "Zod",
     },
 ]
