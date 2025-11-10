@@ -45,8 +45,12 @@ export const Projects = () => {
                     <div className={style.motionDiv}>
 
                         <Swiper
-                            spaceBetween={50}
-                            slidesPerView={3}
+                            spaceBetween={32}
+                            slidesPerView={1}
+                            breakpoints={{
+                                768: { slidesPerView: 2 },
+                                1024: { slidesPerView: 3 },
+                            }}
                             navigation={{
                                 nextEl: `.${style.next}`,
                                 prevEl: `.${style.prev}`
@@ -70,23 +74,7 @@ export const Projects = () => {
                             })}
 
                         </Swiper>
-                        {/* {visibleProjects.map(project => {
-                                return (
-                                    <Card
-                                        key={project.id}
-                                        name={project.name}
-                                        site={project.site}
-                                        img={project.img}
-                                        git={project.git}
-                                        description={project.description}
-                                        technologies={project.technologies}
-                                        initial={{ opacity: 0, y: 25 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: .35 }}
-                                        viewport={{ once: true, amount: .3 }}
-                                    />
-                                )
-                            })} */}
+
                         {modal ? <ModalDetail
                         /> : null}
                         <button className={`${style.carouselButton} ${style.prev}`} >
