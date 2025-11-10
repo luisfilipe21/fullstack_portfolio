@@ -63,23 +63,26 @@
             margin: 0 auto;
             max-width: 1024px;
 
+            :global(.swiper) {
+                padding-bottom: 3rem !important;
+            }
+            
             .swiperDiv {
                 width: 100%;
-
-                :global(.swiper) {
-                    padding-bottom: 3rem !important;
-                    background-color: red;
-
-                }
+                
+                
 
                 :global(.swiper-slide) {
                     display: flex;
                     justify-content: center;
-                    min-width: 350px;
+                    min-width: 200px;
                     min-height: 420px;
 
                     @media(min-width: 768px) {
-                    width: 340px;
+                    min-width: 330px;
+                    }
+                    @media(min-width: 1024px) {
+                    max-width: 360px;
                     }
                 }
 

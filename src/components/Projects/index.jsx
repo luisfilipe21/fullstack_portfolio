@@ -45,12 +45,13 @@ export const Projects = () => {
                     <div className={style.motionDiv}>
 
                         <Swiper
-                            spaceBetween={32}
+                            spaceBetween={24}
                             slidesPerView="auto"
                             centeredSlides={false}
+                            centerInsufficientSlides={true}
                             breakpoints={{
                                 768: { slidesPerView: 2 },
-                                1024: { slidesPerView: 3 },
+                                1024: { slidesPerView: 2 },
                             }}
                             navigation={{
                                 nextEl: `.${style.next}`,
@@ -79,7 +80,7 @@ export const Projects = () => {
                         {modal ? <ModalDetail
                         /> : null}
                         <button className={`${style.carouselButton} ${style.prev}`} >
-                            <TbPlayerTrackPrevFilled  size={25} color={`#f6be3d`} />
+                            <TbPlayerTrackPrevFilled size={25} color={`#f6be3d`} />
                         </button>
                         <button className={`${style.carouselButton} ${style.next}`} >
                             <TbPlayerTrackNextFilled size={25} color={`#f6be3d`} />
