@@ -107,10 +107,10 @@
             z-index: 10;
             
             &.prev {
-                left: -1em;
+                left: -.5em;
             }
             &.next {
-                right: -1em;
+                right: -.5em;
             }
             svg {
                 transition: transform .25s ease;

@@ -7,6 +7,7 @@ import { ProjectContext } from "../../providers/LengContext";
 import { ModalDetail } from "../Modal";
 import { projects } from "../../data/projects";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
+import { TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -78,10 +79,10 @@ export const Projects = () => {
                         {modal ? <ModalDetail
                         /> : null}
                         <button className={`${style.carouselButton} ${style.prev}`} >
-                            <GrCaretPrevious size={25} color={`#f6be3d`} />
+                            <TbPlayerTrackPrevFilled  size={25} color={`#f6be3d`} />
                         </button>
                         <button className={`${style.carouselButton} ${style.next}`} >
-                            <GrCaretNext size={25} color={`#f6be3d`} />
+                            <TbPlayerTrackNextFilled size={25} color={`#f6be3d`} />
                         </button>
                     </div>
                 </div>

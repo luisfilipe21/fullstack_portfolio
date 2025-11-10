@@ -28,7 +28,7 @@ export const Header = () => {
             text: "Contact",
         }
     ]
-    const linkDasPaginas = [ 
+    const linkDasPaginas = [
         {
             id: 1,
             href: "#projects",
@@ -50,8 +50,8 @@ export const Header = () => {
         <header>
             <motion.div
                 className="container-header"
-                initial={{ y: -100 }}
-                whileInView={{ y: 0 }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
                 <div className={style.box}>
