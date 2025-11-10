@@ -6,7 +6,6 @@ import { useContext, useState } from "react";
 import { ProjectContext } from "../../providers/LengContext";
 import { ModalDetail } from "../Modal";
 import { projects } from "../../data/projects";
-import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 import { TbPlayerTrackNextFilled, TbPlayerTrackPrevFilled } from "react-icons/tb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
@@ -47,7 +46,8 @@ export const Projects = () => {
 
                         <Swiper
                             spaceBetween={32}
-                            slidesPerView={1}
+                            slidesPerView="auto"
+                            centeredSlides={false}
                             breakpoints={{
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 3 },
