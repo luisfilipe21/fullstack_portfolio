@@ -1,7 +1,9 @@
-import { motion } from "framer-motion";
 import style from "./style.module.scss";
 import { useContext } from "react";
 import { ProjectContext } from "../../../providers/LengContext";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const Card = ({
     site,
@@ -15,7 +17,7 @@ export const Card = ({
 
 
     return (<>
-        <motion.div
+        <div
             key={img}
             className={style.projects}>
 
@@ -53,7 +55,7 @@ export const Card = ({
                 </div>
 
             </div>
-        </motion.div>
+        </div>
     </>
     )
 }

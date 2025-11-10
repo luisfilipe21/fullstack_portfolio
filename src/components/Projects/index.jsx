@@ -6,28 +6,20 @@ import { useContext, useState } from "react";
 import { ProjectContext } from "../../providers/LengContext";
 import { ModalDetail } from "../Modal";
 import { projects } from "../../data/projects";
-import { GrCaretNext, GrCaretPrevious, GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const Projects = () => {
-    const { port, getProjects, project, modal, capturedId, setCapturedProjectId } = useContext(ProjectContext);
+    const { port, modal } = useContext(ProjectContext);
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const next = () => {
-        console.log(currentIndex)
-        console.log(setCurrentIndex((prev) => (prev + 1) % projects.slice(0,5).length))
-        setCurrentIndex((prev) => (prev + 1) % projects.slice(0,5).length);
-    };
+    const visibleProjects = projects.slice(0, 5);
 
-    const prev = () => {
-        console.log(currentIndex)
-        console.log(setCurrentIndex((prev) =>
-            prev === 0 ? projects.slice(0,5).length - 1 : prev - 1
-        ))
-        setCurrentIndex((prev) =>
-            prev === 0 ? projects.slice(0,5).length - 1 : prev - 1
-        );
-    };
 
     return (
         <section id="projects">
@@ -51,10 +43,34 @@ export const Projects = () => {
                     </div>
 
                     <div className={style.motionDiv}>
-                        <motion.div
-                            className={style.projectCards}
-                        >
-                            {projects.slice(0, 5).map(project => {
+
+                        <Swiper
+                            spaceBetween={50}
+                            slidesPerView={3}
+                            navigation={{
+                                nextEl: `.${style.next}`,
+                                prevEl: `.${style.prev}`
+                            }}
+                            pagination={{ clickable: true }}
+                            modules={[Navigation, Pagination]}
+                            className={style.swiperDiv}>
+                            {visibleProjects.map(project => {
+                                return (
+                                    <SwiperSlide key={project.id}>
+                                        <Card
+                                            name={project.name}
+                                            site={project.site}
+                                            img={project.img}
+                                            git={project.git}
+                                            description={project.description}
+                                            technologies={project.technologies}
+                                        />
+                                    </SwiperSlide>
+                                )
+                            })}
+
+                        </Swiper>
+                        {/* {visibleProjects.map(project => {
                                 return (
                                     <Card
                                         key={project.id}
@@ -70,15 +86,14 @@ export const Projects = () => {
                                         viewport={{ once: true, amount: .3 }}
                                     />
                                 )
-                            })}
-                        </motion.div>
+                            })} */}
                         {modal ? <ModalDetail
                         /> : null}
-                        <button className={`${style.carouselButton} ${style.prev}`} onClick={prev}>
-                            <GrCaretPrevious  size={25} color={`#f6be3d`}/> 
+                        <button className={`${style.carouselButton} ${style.prev}`} >
+                            <GrCaretPrevious size={25} color={`#f6be3d`} />
                         </button>
-                        <button className={`${style.carouselButton} ${style.next}`} onClick={next}>
-                            <GrCaretNext  size={25} color={`#f6be3d`}/>
+                        <button className={`${style.carouselButton} ${style.next}`} >
+                            <GrCaretNext size={25} color={`#f6be3d`} />
                         </button>
                     </div>
                 </div>

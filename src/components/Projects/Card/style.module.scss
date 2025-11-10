@@ -1,9 +1,9 @@
 .projects {
     min-width: 300px;
-    scroll-snap-align: start;
     background: var(--gray-2);
     border-radius: 1rem ;
     padding: 1rem;
+    
 
     .cards {
         display: flex;
