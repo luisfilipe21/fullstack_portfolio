@@ -21,8 +21,14 @@
             height: 168px;
             border-radius: 0.3rem;
 
+            @media(min-width: 412px) {
+                width: 315px;
+            }            
             @media(min-width: 768px) {
                 width: 305px;
+            }            
+            @media(min-width: 853px) {
+                width: 340px;
             }            
             @media(min-width: 1024px) {
                 width: 327px;
