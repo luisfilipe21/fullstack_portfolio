@@ -1,8 +1,6 @@
 header {
-    width: 100%;
-    max-width: 1280px;
+    width: 100%;    
     box-shadow: 10px 16px 26px 10px var(--gray-2);
-    margin: 0 auto; 
     padding-left: 0 3.5rem;
     
     @media (max-width: 768px) {
@@ -11,8 +9,9 @@ header {
 
     .box {
         padding: 1rem 2.5rem;
-
+        max-width: 1280px;
         display: flex;
+        margin: 0 auto; 
         align-items: center;
         justify-content: space-between;
         gap:.5rem;
